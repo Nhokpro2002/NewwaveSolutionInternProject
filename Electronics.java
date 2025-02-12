@@ -5,9 +5,9 @@ import java.util.Date;
 public class Electronics extends Product {
 
     private String brand;
-    private Date date;
+    private String date;
 
-    public Electronics(String name, double price, String category, int stock, String brand, Date date) {
+    public Electronics(String name, double price, String category, int stock, String brand, String date) {
         super(name, price, category, stock);
         this.brand = brand;
         this.date = date;
@@ -17,7 +17,7 @@ public class Electronics extends Product {
         return brand;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 

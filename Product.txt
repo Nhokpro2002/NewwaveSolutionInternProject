@@ -1,0 +1,8 @@
+Clothing,T-Shirt,200,costume,1,28,cotton fabric
+Clothing,T-Shirt,200,costume,1,29,cotton fabric
+Clothing,T-Shirt,200,costume,1,30,cotton fabric
+Clothing,T-Shirt,200,costume,1,31,cotton fabric
+Clothing,T-Shirt,200,costume,1,32,cotton fabric
+Laptop,Asus TUF Gaming 2018,20000000,Computer,1,ASUS,1/1/2018
+Laptop,Asus TUF Gaming 2019,29999999,Computer,1,ASUS,1/1/2019
+Laptop,Asus TUF Gaming 2020,28888888,Computer,1,ASUS,1/1/2020

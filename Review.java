@@ -3,10 +3,14 @@ package newwavesolution.basic;
 public class Review {
     public User user;
     public Product product;
-    public int[] points = {1, 2, 3, 4, 5};
+    public int rating;
     private String comment;
 
-    public Review() {
+    public Review(User user, Product product, int rating, String comment) {
+        this.user = user;
+        this.product = product;
+        this.rating = rating;
+        this.comment = comment;
 
     }
 
@@ -23,11 +27,13 @@ public class Review {
     }
 
     public int makeScore() {
-        return points[4];
+        return rating;
     }
 
-    public void displayScore() {
-        System.out.println(makeScore());
-        //makeScore();
+    public String displayReview() {
+        return (user.getUserName()
+                           + " reviewed " + product.getName()
+                           + ": " + rating + " with comment: " + comment);
+
     }
 }

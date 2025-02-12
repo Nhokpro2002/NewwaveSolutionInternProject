@@ -2,6 +2,7 @@ package newwavesolution.basic;
 
 import java.util.ArrayList;
 import java.util.List;
+
 public class Inventory {
 
     private static Inventory instance;
@@ -41,7 +42,16 @@ public class Inventory {
             if (productList.contains(product)) {
                 productList.remove(product);
             }
+        }
+    }
 
+    public List<Product> getProductList() {
+        return productList;
+    }
+
+    public void displayAllProducts() {
+        for (Product product : productList) {
+            System.out.println(product.toString());
         }
     }
 }

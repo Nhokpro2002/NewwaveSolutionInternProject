@@ -1,6 +1,6 @@
 package newwavesolution.basic;
 
-public class CreditCardPayment extends Payment {
+public class CreditCard extends Payment {
 
     private double amountInCreditCard;
 

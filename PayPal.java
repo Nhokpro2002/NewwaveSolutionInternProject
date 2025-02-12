@@ -1,6 +1,6 @@
 package newwavesolution.basic;
 
-public class PayPalPayment extends Payment {
+public class PayPal extends Payment {
 
 
     private double amountInPayPay;

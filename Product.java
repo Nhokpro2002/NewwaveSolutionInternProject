@@ -1,11 +1,15 @@
 package newwavesolution.basic;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Product {
 
     private String name;
     private double price;
     private String category;
     private int stock;
+    private List<Review> reviews = new ArrayList<>();
 
     public Product(String name, double price, String category, int stock) {
         this.name = name;
@@ -31,13 +35,22 @@ public class Product {
         return category;
     }
 
-
     public int getStock() {
         return stock;
     }
 
     public void setStock(int stock) {
         this.stock = stock;
+    }
+
+    public void addReview(Review review) {
+        reviews.add(review);
+    }
+
+    public void getReviews() {
+        for (Review review : reviews) {
+            System.out.println(review.displayReview());
+        }
     }
 
     @Override
@@ -48,6 +61,13 @@ public class Product {
                 ", category='" + category + '\'' +
                 ", stock=" + stock +
                 '}';
+    }
+
+    public void displayReviews() {
+        System.out.println("Customers reviewed: ");
+        for (Review review : reviews) {
+            System.out.println(review);
+        }
     }
 
 }
