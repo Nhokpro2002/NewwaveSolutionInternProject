@@ -6,7 +6,7 @@ public class Admin extends User {
     protected Order order;
     protected Inventory inventory;
 
-    public Admin(String userName, String email, String password, Order order, Product product) {
+    public Admin(String userName, String email, String password, Order order) {
         super(userName, email, password);
         this.isAdmin = true;
         this.order = order;

@@ -18,7 +18,9 @@ public class Customer extends User {
         if (inventory.getProductList().contains(product)) {
             inventory.getProductList().remove(product);
             order.products.add(product);
+            inventory.getProductList().remove(product);
         }
+
     }
 
     public void writeReviewProduct(Review review, Product product) {

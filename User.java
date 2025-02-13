@@ -1,6 +1,6 @@
 package newwavesolution.basic;
 
-public class User {
+public class User implements OrderObserver {
 
     private String userName;
     private String email;
@@ -30,15 +30,24 @@ public class User {
         this.password = password;
     }
 
-    public void checkSignIn(String password) {
+    public boolean checkSignIn(String password) {
 
         if(password.equals(this.password)) {
-            System.out.println("User is logged in");
+            //System.out.println("User is logged in");
+            return true;
         }
+        return false;
     }
 
     public void checkOut() {
         System.out.println("User is logged out");
+    }
+
+    //public void
+
+    @Override
+    public void update(String orderID, String newState) {
+        System.out.println(userName + " received order update: " + orderID + " new State: " + newState);
     }
 
     @Override

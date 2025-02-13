@@ -27,10 +27,6 @@ public class WebE_commerce {
             while ((line = dataReader.readLine()) != null) {
                 List<String> dataList = parseDataLineToList(line);
 
-                if (!dataList.get(0).equals("Clothing")  || dataList.size() != 7) {
-                    continue;
-                }
-
 
                 try {
                     String name = dataList.get(1);
@@ -41,14 +37,14 @@ public class WebE_commerce {
                     if (dataList.get(0).equals("Clothing")) {
                         int size = Integer.parseInt(dataList.get(5));
                         String material = dataList.get(6);
-                        Product product = new Clothing(name, price, category, quantity, size, material);
-                        inventory.getProductList().add(product);
+                        Clothing clothingProduct = new Clothing(name, price, category, quantity, size, material);
+                        inventory.getProductList().add(clothingProduct);
                     }
                     else if (dataList.get(0).equals("Laptop")) {
                         String brand = dataList.get(5);
                         String date = dataList.get(6);
-                        Product product = new Electronics(name, price, category, quantity, brand, date);
-                        inventory.getProductList().add(product);
+                        Electronics electronicsProduct = new Electronics(name, price, category, quantity, brand, date);
+                        inventory.getProductList().add(electronicsProduct);
                     }
                     else {
                         System.out.println("Invalid data");
@@ -64,7 +60,7 @@ public class WebE_commerce {
         }
     }
 
-    public void readListDataUser(String filePathUserTxt) throws FileNotFoundException {
+    /*public void readListDataUser(String filePathUserTxt) throws FileNotFoundException {
         try (BufferedReader dataReader = new BufferedReader(new FileReader(filePathUserTxt))) {
             String line;
             while ((line = dataReader.readLine()) != null) {
@@ -100,6 +96,8 @@ public class WebE_commerce {
         }
     }
 
+     */
+
 
     public List<String> parseDataLineToList(String dataLine) {
         List<String> result = new ArrayList<>();
@@ -114,9 +112,9 @@ public class WebE_commerce {
 
     public void init() throws FileNotFoundException {
         String fileProductTxt = "D:\\ProjectJava\\NewwaveSolutionInternProject\\src\\newwavesolution\\basic\\Product.txt";
-        String fileUserTxt = "D:\\ProjectJava\\NewwaveSolutionInternProject\\src\\newwavesolution\\basic\\User.txt";
+       // String fileUserTxt = "D:\\ProjectJava\\NewwaveSolutionInternProject\\src\\newwavesolution\\basic\\User.txt";
         readListDataProduct(fileProductTxt);
-        readListDataUser(fileUserTxt);
+       // readListDataUser(fileUserTxt);
     }
 
     public static Inventory getInventory() {
