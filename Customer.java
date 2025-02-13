@@ -4,8 +4,8 @@ public class Customer extends User {
 
     private Order order;
     //private Review review;
-    private PayPal payPal;
-    private CreditCard creditCard;
+    private PayPal payPal = new PayPal();
+    private CreditCard creditCard = new CreditCard();
 
     public Customer(String username, String email, String password, Order order) {
         super(username, email, password);

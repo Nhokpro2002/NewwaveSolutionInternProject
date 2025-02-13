@@ -2,6 +2,7 @@ package newwavesolution.basic;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Inventory {
 
@@ -54,4 +55,6 @@ public class Inventory {
             System.out.println(product.toString());
         }
     }
+
+
 }

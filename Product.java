@@ -3,7 +3,7 @@ package newwavesolution.basic;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Product {
+public abstract class Product {
 
     private String name;
     private double price;
@@ -53,6 +53,8 @@ public class Product {
         }
     }
 
+    public abstract boolean equals(Product product);
+
     @Override
     public String toString() {
         return "Product{" +
@@ -69,5 +71,7 @@ public class Product {
             System.out.println(review);
         }
     }
+
+
 
 }

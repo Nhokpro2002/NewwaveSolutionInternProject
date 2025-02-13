@@ -1,6 +1,6 @@
 package newwavesolution.basic;
 
-import java.util.Date;
+import java.util.Objects;
 
 public class Electronics extends Product {
 
@@ -26,5 +26,18 @@ public class Electronics extends Product {
         return "Electronics{" + super.toString() + "brand=" + brand + ", date=" + date + '}';
     }
 
+    @Override
+    public boolean equals(Product product) {
+        if (this == product) return true;
+        if (product == null || getClass() != product.getClass()) return false;
+        Electronics electronics = (Electronics) product;
+        return Objects.equals(getName(), electronics.getName());
+
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getName());
+    }
 
 }
