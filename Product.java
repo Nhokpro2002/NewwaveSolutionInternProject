@@ -8,7 +8,7 @@ public abstract class Product {
     private String name;
     private double price;
     private String category;
-    private int stock;
+    private int stock; // number items in inventory
     private List<Review> reviews = new ArrayList<>();
 
     public Product(String name, double price, String category, int stock) {

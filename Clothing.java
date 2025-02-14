@@ -1,6 +1,5 @@
 package newwavesolution.basic;
 
-import java.util.Objects;
 
 public class Clothing extends Product {
 
@@ -16,16 +15,9 @@ public class Clothing extends Product {
     @Override
     public boolean equals(Product product) {
         if (this == product) return true;
-        if (product == null || getClass() != product.getClass()) return false;
-        Clothing clothing = (Clothing) product;
-        return this.size == clothing.size && this.getName().equals(clothing.getName());
-                //&& Objects.equals(getName(), clothing.getName())
-               // && Objects.equals(this.material, clothing.getMaterial());
-    }
+        if (!(product instanceof Clothing clothing)) return false;
+        return this.getName().equals(clothing.getName()) && this.getSize() == clothing.getSize();
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(getName(), getMaterial(), getSize(), getCategory());
     }
 
     @Override

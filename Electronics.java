@@ -29,15 +29,9 @@ public class Electronics extends Product {
     @Override
     public boolean equals(Product product) {
         if (this == product) return true;
-        if (product == null || getClass() != product.getClass()) return false;
-        Electronics electronics = (Electronics) product;
-        return Objects.equals(getName(), electronics.getName());
+        if (!(product instanceof Electronics electronics)) return false;
+        return this.getName().equals(electronics.getName()) ;
 
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getName());
     }
 
 }
