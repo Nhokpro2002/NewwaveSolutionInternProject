@@ -1,4 +1,4 @@
-package newwavesolution.basic;
+package hus.oop;
 
 import java.io.*;
 import java.util.ArrayList;

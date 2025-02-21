@@ -1,4 +1,4 @@
-package newwavesolution.basic;
+package hus.oop;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package newwavesolution.basic;
+package hus.oop;
 
 public class Admin extends User {
 

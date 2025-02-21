@@ -1,8 +1,7 @@
-package newwavesolution.basic;
+package hus.oop;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class Inventory {
 

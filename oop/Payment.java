@@ -1,4 +1,4 @@
-package newwavesolution.basic;
+package hus.oop;
 
 public abstract class Payment {
 

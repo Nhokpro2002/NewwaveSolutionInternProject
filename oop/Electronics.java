@@ -1,6 +1,4 @@
-package newwavesolution.basic;
-
-import java.util.Objects;
+package hus.oop;
 
 public class Electronics extends Product {
 
