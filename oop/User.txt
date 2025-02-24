@@ -1,0 +1,12 @@
+Customer,Nguyen Van A,nguyenvana@gmail.com,nguyenvana,false
+Customer,Nguyen Van B,nguyenvanb@gmail.com.nguyenvanb,false
+Customer,Nguyen Van C,nguyenvanc@gmail.com.nguyenvanc,false
+Customer,Nguyen Van D,nguyenvanD@gmail.com.nguyenvand,false
+Customer,Nguyen Van E,nguyenvane@gmail.com.nguyenvane,false
+Customer,Nguyen Van F,nguyenvanf@gmail.com.nguyenvanf,false
+Customer,Nguyen Van G,nguyenvang@gmail.com.nguyenvang,false
+Admin,Nguyen Thi A,nguyenthia@gmail.com,nguyenthia,true
+Admin,Nguyen Thi B,nguyenthib@gmail.com,nguyenthib,true
+Admin,Nguyen Thi C,nguyenthic@gmail.com,nguyenthic,true
+Admin,Nguyen Thi D,nguyenthid@gmail.com,nguyenthid,true
+

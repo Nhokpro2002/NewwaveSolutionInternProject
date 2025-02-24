@@ -1,0 +1,15 @@
+Clothing,T-Shirt,200,costume,1,28,cotton fabric
+Clothing,T-Shirt,200,costume,1,29,cotton fabric
+Clothing,T-Shirt,200,costume,1,30,cotton fabric
+Clothing,T-Shirt,200,costume,1,31,cotton fabric
+Clothing,T-Shirt,200,costume,1,32,cotton fabric
+Clothing,Hat,50,costume,1,3,plastic
+Clothing,Hat,50,costume,1,4,plastic
+Clothing,Hat,50,costume,1,5,plastic
+Laptop,Asus TUF Gaming 2018,20000,Computer,1,ASUS,2018
+Laptop,Asus TUF Gaming 2019,29990,Computer,1,ASUS,2019
+Laptop,Asus TUF Gaming 2020,28888,Computer,1,ASUS,2020
+Laptop,Lenovo Legend 2020,21111,Computer,1,Lenovo,2020
+Laptop,Lenovo Legend 2021,22222,Computer,2,Lenovo,2021
+Laptop,Lenovo Legend 2022,22222,Computer,1,Lenovo,2022
+Laptop,Lenovo Legend 2023,23242,Computer,1,Lenovo,2023
