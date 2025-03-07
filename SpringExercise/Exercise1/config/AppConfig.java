@@ -4,6 +4,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages = "com.newwave.webbackendlaboratory") // ✅ Quét toàn bộ package này
+@ComponentScan(basePackages = "SpringExercise.Exercise1.service")
 public class AppConfig {
 }
